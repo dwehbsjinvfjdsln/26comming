@@ -50,7 +50,7 @@
 
     @keyframes floatHeart {
       0%, 100% { transform: translateY(0px) rotate(-10deg); opacity: 0.4; }
-      50%       { transform: translateY(-32px) rotate(10deg); opacity: 0.8; }
+      50% { transform: translateY(-32px) rotate(10deg); opacity: 0.8; }
     }
 
     /* ───── LOCK ELEMENTS ───── */
@@ -62,7 +62,7 @@
 
     @keyframes pulse {
       0%, 100% { transform: scale(1); }
-      50%       { transform: scale(1.12); }
+      50% { transform: scale(1.12); }
     }
 
     .lock-title {
@@ -156,10 +156,10 @@
 
     @keyframes shake {
       0%, 100% { transform: translateX(0); }
-      20%       { transform: translateX(-12px); }
-      40%       { transform: translateX(12px); }
-      60%       { transform: translateX(-8px); }
-      80%       { transform: translateX(8px); }
+      20% { transform: translateX(-12px); }
+      40% { transform: translateX(12px); }
+      60% { transform: translateX(-8px); }
+      80% { transform: translateX(8px); }
     }
 
     .shake { animation: shake 0.45s ease; }
@@ -297,7 +297,7 @@
 
     @keyframes bounce {
       0%, 100% { transform: translateY(0); }
-      50%       { transform: translateY(-10px); }
+      50% { transform: translateY(-10px); }
     }
 
     .message-area {
@@ -458,7 +458,6 @@
       z-index: 4;
     }
 
-    /* Animation States */
     .envelope.open .envelope-flap {
       transform: rotateX(180deg);
     }
@@ -525,13 +524,11 @@
     }
 
     @keyframes noteFloat {
-      0%   { transform: translateY(0)     scale(1);   opacity: 1; }
+      0%   { transform: translateY(0) scale(1); opacity: 1; }
       100% { transform: translateY(-130px) scale(0.4); opacity: 0; }
     }
 
-    /* ──────────────────────────────────────────
-       NEW: CAKE SCREEN & POPUP STYLES
-    ────────────────────────────────────────── */
+    /* ───── CAKE SCREEN & POPUP STYLES ───── */
     #cake-screen {
       display: none;
       min-height: 100vh;
@@ -545,7 +542,6 @@
       text-align: center;
     }
 
-    /* CSS Cake */
     .cake-container {
       position: relative;
       width: 240px;
@@ -640,7 +636,6 @@
       100% { transform: translateX(-50%) scale(1.1); opacity: 1; background: #ffb300; }
     }
 
-    /* The Cut Animation */
     .cut-line {
       position: absolute;
       top: -30px;
@@ -663,7 +658,6 @@
       height: 160px;
     }
 
-    /* Cut Button */
     #cut-cake-btn {
       display: none;
       opacity: 0;
@@ -673,7 +667,6 @@
       margin-top: 2rem;
     }
 
-    /* The Pop-Up */
     .funny-modal {
       position: fixed;
       top: 0; left: 0; width: 100%; height: 100%;
@@ -716,15 +709,14 @@
 <body>
 
 <div id="lock-screen">
-
-  <div class="floating-heart" style="top:8%;  left:6%;  animation-delay:0s">💕</div>
+  <div class="floating-heart" style="top:8%; left:6%; animation-delay:0s">💕</div>
   <div class="floating-heart" style="top:12%; right:9%; animation-delay:1s">🌸</div>
-  <div class="floating-heart" style="top:4%;  left:50%;animation-delay:2s">💗</div>
-  <div class="floating-heart" style="bottom:14%;left:4%;animation-delay:0.5s">🌺</div>
-  <div class="floating-heart" style="bottom:9%; right:7%;animation-delay:1.5s">💓</div>
-  <div class="floating-heart" style="bottom:22%;left:44%;animation-delay:2.5s">🎀</div>
-  <div class="floating-heart" style="top:35%;  left:2%; animation-delay:3s">💞</div>
-  <div class="floating-heart" style="top:28%;  right:3%;animation-delay:3.5s">🌷</div>
+  <div class="floating-heart" style="top:4%; left:50%; animation-delay:2s">💗</div>
+  <div class="floating-heart" style="bottom:14%; left:4%; animation-delay:0.5s">🌺</div>
+  <div class="floating-heart" style="bottom:9%; right:7%; animation-delay:1.5s">💓</div>
+  <div class="floating-heart" style="bottom:22%; left:44%; animation-delay:2.5s">🎀</div>
+  <div class="floating-heart" style="top:35%; left:2%; animation-delay:3s">💞</div>
+  <div class="floating-heart" style="top:28%; right:3%; animation-delay:3.5s">🌷</div>
 
   <div class="lock-icon">🔐</div>
   <div class="lock-title">Enter Secret Code</div>
@@ -777,22 +769,21 @@
 
 
 <div id="main-screen">
-
-  <div class="floating-heart" style="top:1%;  left:4%;  animation-delay:0s">💕</div>
-  <div class="floating-heart" style="top:2%;  right:7%; animation-delay:1.2s">🌸</div>
-  <div class="floating-heart" style="top:7%;  left:55%;animation-delay:2.1s">💗</div>
+  <div class="floating-heart" style="top:1%; left:4%; animation-delay:0s">💕</div>
+  <div class="floating-heart" style="top:2%; right:7%; animation-delay:1.2s">🌸</div>
+  <div class="floating-heart" style="top:7%; left:55%; animation-delay:2.1s">💗</div>
   <div class="floating-heart" style="top:25%; left:2%; animation-delay:0.8s">💞</div>
-  <div class="floating-heart" style="top:40%; right:3%;animation-delay:1.8s">🌷</div>
+  <div class="floating-heart" style="top:40%; right:3%; animation-delay:1.8s">🌷</div>
 
   <div class="page-title">🎂 Happy Birthday Baby! 🎂</div>
   <div class="page-sub">June 26th is almost here... 🎉</div>
 
   <div class="birthday-card">
     <div class="card-hearts">
-      <span class="card-heart-item" style="top:8%;  left:4%">💕</span>
-      <span class="card-heart-item" style="top:5%;  right:6%">🌸</span>
-      <span class="card-heart-item" style="bottom:7%;left:10%">💗</span>
-      <span class="card-heart-item" style="bottom:4%;right:4%">💓</span>
+      <span class="card-heart-item" style="top:8%; left:4%">💕</span>
+      <span class="card-heart-item" style="top:5%; right:6%">🌸</span>
+      <span class="card-heart-item" style="bottom:7%; left:10%">💗</span>
+      <span class="card-heart-item" style="bottom:4%; right:4%">💓</span>
       <span class="card-heart-item" style="top:42%; left:1%">🌺</span>
       <span class="card-heart-item" style="top:38%; right:2%">🎀</span>
       <span class="card-heart-item" style="top:20%; left:15%">💞</span>
@@ -839,26 +830,13 @@
   </div>
 
   <div class="section-heading">📸 Our Memories</div>
-  
-  <div style="width:100%;max-width:360px;margin:0 auto;display:flex;flex-direction:column;gap:15px;">
-
-    <img
-      src="IMG_4445.png"
-      alt="Our Memory 1"
-      style="width:100%;border-radius:20px;display:block;border:3px solid #ffc2d9;box-shadow:0 6px 20px rgba(233,30,140,0.15);"
-    />
-
-    <img
-      src="8494A47C-DD4B-4241-96BF-A1B9D08DBE08.JPG"
-      alt="Our Memory 2"
-      style="width:100%;border-radius:20px;display:block;border:3px solid #ffc2d9;box-shadow:0 6px 20px rgba(233,30,140,0.15);"
-    />
-
+  <div style="width:100%; max-width:360px; margin:0 auto; display:flex; flex-direction:column; gap:15px;">
+    <img src="IMG_4445.png" alt="Our Memory 1" style="width:100%; border-radius:20px; display:block; border:3px solid #ffc2d9; box-shadow:0 6px 20px rgba(233,30,140,0.15);" />
+    <img src="8494A47C-DD4B-4241-96BF-A1B9D08DBE08.JPG" alt="Our Memory 2" style="width:100%; border-radius:20px; display:block; border:3px solid #ffc2d9; box-shadow:0 6px 20px rgba(233,30,140,0.15);" />
   </div>
 
   <div class="section-heading">🎁 Our Little Stories</div>
   <div class="gift-grid">
-    
     <div class="gift-container" onclick="openEnvelope(this, 0)">
       <div class="envelope">
         <div class="envelope-back"></div>
@@ -898,24 +876,17 @@
       </div>
       <div class="gift-text">Reborn</div>
     </div>
-
   </div>
-  <div id="wish-area" style="width:100%;max-width:360px;margin-top:0.5rem;"></div>
+  
+  <div id="wish-area" style="width:100%; max-width:360px; margin-top:0.5rem;"></div>
 
   <div class="section-heading">💕 From My Heart</div>
-  <div class="wish-bubble">
-    🎂 Wishing you all the happiness your heart can hold on this magical day my princess!
-  </div>
-  <div class="wish-bubble right">
-    ✨ May this year bring you every dream, adventure, and love beyond measure itnaa ki soche b naaa.
-  </div>
-  <div class="wish-bubble" style="animation-delay:0.6s">
-    🌸 Thank you for all the things, you mean the world to me. Happy Birthday Cutuuu💗! 
-  </div>
+  <div class="wish-bubble">🎂 Wishing you all the happiness your heart can hold on this magical day my princess!</div>
+  <div class="wish-bubble right">✨ May this year bring you every dream, adventure, and love beyond measure itnaa ki soche b naaa.</div>
+  <div class="wish-bubble" style="animation-delay:0.6s">🌸 Thank you for all the things, you mean the world to me. Happy Birthday Cutuuu💗!</div>
 
   <div class="section-heading" style="margin-top: 2rem;">🍰 The Grand Finale</div>
   <button class="confetti-btn" style="margin-bottom: 2rem; padding: 16px 24px;" onclick="goToCakePage()">Let's blow the candle & cut the cake! 🎂</button>
-
 </div>
 
 <div id="cake-screen">
@@ -954,31 +925,25 @@
 </div>
 
 <script>
-  /* ──────────────────────────────────────────
-     CONFIG
-  ────────────────────────────────────────── */
-  const SECRET_CODE   = '1326';         
-  const BIRTHDAY_NAME = 'Baby';         
+  const SECRET_CODE   = "1326";
   const BIRTHDAY_DATE = { month: 6, day: 26 }; 
 
-  // 💌 The four customized emoji stories
   const WISHES = [
     "I still remember when I saw you acting like a little girl. You were acting like a small kid, and I felt it was soo cute! You are just so pure and so adorable, my heart melted right then and there. 🤭💕",
     "Remember when I held your hand for the first time? I totally bluffed and said I wanted to teach you how to drive the car! But in reality, I just really wanted an excuse to hold your hand. 🚗🙈",
     "Then came my birthday, where I was behaving ajib... and at the end you said we couldn't talk. Soham lost you for 4 whole months. We had a lot of misunderstandings, but through it all, I was always loyal to you. 💔😔",
     "The first hug after our separation... It was the 23rd when I finally met you after 7,689,600 seconds, 128,160 minutes, 2136 hours, which is 12 weeks and 5 days. When I hugged you that day, it felt like heaven. I felt reborn. 🤗✨"
   ];
-  /* ────────────────────────────────────────── */
 
-  let entered = '';
-  const display  = document.getElementById('code-display');
-  const errorMsg = document.getElementById('error-msg');
+  let entered = "";
+  const display  = document.getElementById("code-display");
+  const errorMsg = document.getElementById("error-msg");
 
   function updateDisplay() {
-    let shown = '';
+    let shown = "";
     for (let i = 0; i < SECRET_CODE.length; i++) {
-      shown += i < entered.length ? '●' : '_';
-      if (i < SECRET_CODE.length - 1) shown += ' ';
+      shown += i < entered.length ? "●" : "_";
+      if (i < SECRET_CODE.length - 1) shown += " ";
     }
     display.textContent = shown;
   }
@@ -994,42 +959,42 @@
   function delDigit() {
     entered = entered.slice(0, -1);
     updateDisplay();
-    errorMsg.classList.remove('show');
+    errorMsg.classList.remove("show");
   }
 
   function checkCode() {
     if (entered === SECRET_CODE) {
-      document.getElementById('lock-screen').style.display = 'none';
-      const ms = document.getElementById('main-screen');
-      ms.style.display = 'flex';
+      document.getElementById("lock-screen").style.display = "none";
+      const ms = document.getElementById("main-screen");
+      ms.style.display = "flex";
       startCountdown();
       setTimeout(launchConfetti, 700);
     } else {
-      display.classList.add('shake');
-      errorMsg.classList.add('show');
+      display.classList.add("shake");
+      errorMsg.classList.add("show");
       setTimeout(() => {
-        display.classList.remove('shake');
-        entered = '';
+        display.classList.remove("shake");
+        entered = "";
         updateDisplay();
-        errorMsg.classList.remove('show');
+        errorMsg.classList.remove("show");
       }, 1100);
     }
   }
 
   function launchConfetti() {
-    const colors = ['#ff6b9d','#ffd700','#ff4081','#f48fb1','#ce93d8','#80cbc4','#fff176','#ff80ab'];
+    const colors = ["#ff6b9d", "#ffd700", "#ff4081", "#f48fb1", "#ce93d8", "#80cbc4", "#fff176", "#ff80ab"];
     for (let i = 0; i < 80; i++) {
       setTimeout(() => {
-        const c = document.createElement('div');
-        c.className = 'confetti-piece';
-        c.style.left            = Math.random() * 100 + 'vw';
-        c.style.top             = '-12px';
-        c.style.width           = (6 + Math.random() * 9) + 'px';
-        c.style.height          = (6 + Math.random() * 9) + 'px';
-        c.style.background      = colors[Math.floor(Math.random() * colors.length)];
-        c.style.animationDuration = (2 + Math.random() * 2.5) + 's';
-        c.style.animationDelay  = (Math.random() * 0.6) + 's';
-        if (Math.random() > 0.45) c.style.borderRadius = '50%';
+        const c = document.createElement("div");
+        c.className = "confetti-piece";
+        c.style.left = Math.random() * 100 + "vw";
+        c.style.top = "-12px";
+        c.style.width = (6 + Math.random() * 9) + "px";
+        c.style.height = (6 + Math.random() * 9) + "px";
+        c.style.background = colors[Math.floor(Math.random() * colors.length)];
+        c.style.animationDuration = (2 + Math.random() * 2.5) + "s";
+        c.style.animationDelay = (Math.random() * 0.6) + "s";
+        if (Math.random() > 0.45) c.style.borderRadius = "50%";
         document.body.appendChild(c);
         setTimeout(() => c.remove(), 5000);
       }, i * 25);
@@ -1038,48 +1003,156 @@
   }
 
   function spawnNotes() {
-    const notes = ['🎵','🎶','🎉','💕','🌸','💗','🎊','✨'];
+    const notes = ["🎵", "🎶", "🎉", "💕", "🌸", "💗", "🎊", "✨"];
     for (let i = 0; i < 10; i++) {
       setTimeout(() => {
-        const n = document.createElement('div');
-        n.className = 'music-note';
+        const n = document.createElement("div");
+        n.className = "music-note";
         n.textContent = notes[Math.floor(Math.random() * notes.length)];
-        n.style.left  = (8 + Math.random() * 82) + 'vw';
-        n.style.top   = (45 + Math.random() * 35) + 'vh';
-        n.style.animationDelay = (Math.random() * 0.4) + 's';
+        n.style.left = (8 + Math.random() * 82) + "vw";
+        n.style.top = (45 + Math.random() * 35) + "vh";
+        n.style.animationDelay = (Math.random() * 0.4) + "s";
         document.body.appendChild(n);
         setTimeout(() => n.remove(), 4800);
       }, i * 120);
     }
   }
 
-  /* ── Dynamic Envelope Function ── */
   function openEnvelope(element, idx) {
-    const env = element.querySelector('.envelope');
-    
-    // Close other envelopes
-    const allEnvs = document.querySelectorAll('.envelope');
+    const env = element.querySelector(".envelope");
+    const allEnvs = document.querySelectorAll(".envelope");
     allEnvs.forEach(e => {
-      if (e !== env) e.classList.remove('open');
+      if (e !== env) e.classList.remove("open");
     });
 
-    const isOpen = env.classList.contains('open');
-    if (!isOpen) {
-      env.classList.add('open');
+    if (!env.classList.contains("open")) {
+      env.classList.add("open");
       setTimeout(() => {
         showWish(idx);
-      }, 300); // Shows text slightly after it begins to open
+      }, 300);
     } else {
-      // Toggle it closed if tapped again
-      env.classList.remove('open');
+      env.classList.remove("open");
     }
   }
 
   function showWish(idx) {
-    const area = document.getElementById('wish-area');
-    area.innerHTML = '';
-    const b = document.createElement('div');
-    b.className = 'wish-bubble';
-    b.style.borderColor = '#e91e8c';
-    b.style.background  = '#fff0f8';
-    b.style.fontSize    = '15
+    const area = document.getElementById("wish-area");
+    area.innerHTML = "";
+    const b = document.createElement("div");
+    b.className = "wish-bubble";
+    b.style.borderColor = "#e91e8c";
+    b.style.background  = "#fff0f8";
+    b.style.fontSize    = "15px";
+    b.innerHTML = WISHES[idx];
+    area.appendChild(b);
+    b.scrollIntoView({ behavior: "smooth", block: "center" });
+    spawnNotes();
+  }
+
+  function calculateTimeRemaining() {
+    const now  = new Date();
+    const year = now.getFullYear();
+    let bday   = new Date(year, BIRTHDAY_DATE.month - 1, BIRTHDAY_DATE.day, 0, 0, 0);
+    if (now >= bday) bday = new Date(year + 1, BIRTHDAY_DATE.month - 1, BIRTHDAY_DATE.day, 0, 0, 0);
+    const diff = bday - now;
+    
+    if (diff <= 0) return null;
+    
+    return {
+      days: Math.floor(diff / 86400000),
+      hours: Math.floor((diff % 86400000) / 3600000),
+      mins: Math.floor((diff % 3600000) / 60000),
+      secs: Math.floor((diff % 60000) / 1000)
+    };
+  }
+
+  function startCountdown() {
+    function update() {
+      const time = calculateTimeRemaining();
+      if (!time) {
+        document.getElementById("cd-days").textContent  = "🎂";
+        document.getElementById("cd-hours").textContent = "IT'S";
+        document.getElementById("cd-mins").textContent  = "YOUR";
+        document.getElementById("cd-secs").textContent  = "DAY!";
+        return;
+      }
+      document.getElementById("cd-days").textContent  = String(time.days).padStart(2, "0");
+      document.getElementById("cd-hours").textContent = String(time.hours).padStart(2, "0");
+      document.getElementById("cd-mins").textContent  = String(time.mins).padStart(2, "0");
+      document.getElementById("cd-secs").textContent  = String(time.secs).padStart(2, "0");
+    }
+    update();
+    setInterval(update, 1000);
+  }
+
+  function startLockCountdown() {
+    function updateLock() {
+      const time = calculateTimeRemaining();
+      if (!time) {
+        document.getElementById("lk-days").textContent  = "🎂";
+        document.getElementById("lk-hours").textContent = "IT'S";
+        document.getElementById("lk-mins").textContent  = "HER";
+        document.getElementById("lk-secs").textContent  = "DAY!";
+        return;
+      }
+      document.getElementById("lk-days").textContent  = String(time.days).padStart(2, "0");
+      document.getElementById("lk-hours").textContent = String(time.hours).padStart(2, "0");
+      document.getElementById("lk-mins").textContent  = String(time.mins).padStart(2, "0");
+      document.getElementById("lk-secs").textContent  = String(time.secs).padStart(2, "0");
+    }
+    updateLock();
+    setInterval(updateLock, 1000);
+  }
+
+  function goToCakePage() {
+    document.getElementById("main-screen").style.display = "none";
+    document.getElementById("cake-screen").style.display = "flex";
+    window.scrollTo(0, 0);
+
+    let count = 3;
+    const numberDisplay = document.getElementById("countdown-number");
+    const textDisplay = document.getElementById("blow-countdown-display");
+    
+    if (!numberDisplay || !textDisplay) return; 
+    
+    const blowInterval = setInterval(() => {
+      count--;
+      if (count > 0) {
+        numberDisplay.innerText = count;
+      } else {
+        clearInterval(blowInterval);
+        document.querySelectorAll(".candle-flame").forEach(f => f.classList.add("out"));
+        textDisplay.innerHTML = '<span style="font-size:32px; font-weight:800; color:#e91e8c; line-height: 1.4;">Yay! Happy Birthday!<br>🎂🎉</span>';
+        
+        setTimeout(() => {
+          const cutBtn = document.getElementById("cut-cake-btn");
+          if (cutBtn) {
+            cutBtn.style.display = "block";
+            setTimeout(() => cutBtn.style.opacity = "1", 50);
+          }
+        }, 800);
+      }
+    }, 1000);
+  }
+
+  function cutTheCake() {
+    document.getElementById("cut-cake-btn").style.display = "none";
+    document.getElementById("the-cake").classList.add("cut");
+    launchConfetti();
+
+    setTimeout(() => {
+      document.getElementById("funny-modal").classList.add("show");
+    }, 1000);
+  }
+
+  function closePopup() {
+    document.getElementById("funny-modal").classList.remove("show");
+  }
+
+  // Initialize display and lock timer
+  updateDisplay();
+  startLockCountdown();
+
+</script>
+</body>
+</html>
